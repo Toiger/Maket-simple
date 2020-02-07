@@ -40,11 +40,11 @@ padding:0;
 }
 
 .main-header-title {
-    margin: 0 0 50px 0;
+    display: block;
     font-size: 60px;
     font-weight: 400;
-    display: block;
     line-height: 1.2;
+    margin: 0 0 50px 0;
 }
 
 .main-header-list {
@@ -88,12 +88,13 @@ padding:0;
 }
 
 .title-about {
-    width: 254px;
+    display: block;
+    width: 100%;
+    margin: 0 0 50px 0;
     font-size: 30px;
     line-height: 36px;
     font-weight: 400;
     color: #445161;
-    margin: 0 0 50px 0;
 }
 
 .abot p {
@@ -103,22 +104,25 @@ padding:0;
     line-height: 24px;
     font-weight: 400;
     color: #333333;
-    margin: 0 0 16px 0;
+    
 }
 
 .about-img {
     display: block;
+    float: right;
     width: 430px;
     min-height: 245px;
     background-color: #445161;
-    float: right;
+    clear: both;
+    
 }
 
 .about-video {
     display: block;
+    float: right;
     width: 430px;
     height: 245px;
-    float: right;
+
 }
 
 
@@ -135,14 +139,15 @@ padding:0;
 }
 
 .title-dignity {
-    width: 354px;
+    display: block;
+    width: 100%;
+     margin: 0 0 29px 0;
     font-family: Arial;
     font-size: 30px;
     line-height: 36px;
     font-weight: 400;
+    text-align: center;
     color: #445161;
-    display: block;
-    margin: 0 auto 29px;
 }
 
 .dignity-left {
@@ -200,24 +205,29 @@ padding:0;
     position: absolute;
     left: -39px;
     top: 0px;
-    background-image: url(../img/backandtick.jpg)
+    background-image: url(../img/backandtick.jpg);
 }
+
+.dignity:after {
+content: "";
+display: block;
+width: 100%;
+ clear: both;}
 
 .screenshots {
     min-height: 487px;
 }
 
 .screenshots-title {
+    display: block;
     width: 100%;
+    margin-bottom: 35px;
     text-align: center;
     font-family: Arial;
     font-size: 30px;
     line-height: 36px;
     font-weight: 400;
     color: #445161;
-    width: 100%;
-    display: block;
-    margin-bottom: 35px;
 }
 
 .screenshots p {
@@ -263,11 +273,15 @@ padding:0;
     justify-content: space-around;
 }
 
-.reviews-wrap {}
-
-.avatar {
-    float: left;
+.avatar{
+display: block;
+width: 75px;
+height: 75px;
+border-radius: 50%;
+background-color:#445161;
+float: left;
 }
+
 
 .reviews-p {
     width: 436px;
@@ -278,6 +292,7 @@ padding:0;
     border-radius: 10px;
     position: relative;
     border-width: 483px;
+    
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -300,16 +315,22 @@ padding:0;
 
 .user {
     display: block;
-    text-decoration: none;
     width: 68px;
     height: 10px;
+    margin: 15px 0 16px 0;
+    text-decoration: none;
     font-family: Arial;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
     color: #989898;
-    margin: 15px 0 16px 0;
-    
+}
+
+.reviews:after {
+content: "";
+display: block;
+width: 100%;
+ clear: both;
 }
 
 .buy {
@@ -317,16 +338,15 @@ padding:0;
 }
 
 .buy-title{
-    margin: 0 0 29px 0;
+    display: block;
     width: 100%;
+    margin: 0 0 29px 0;
     text-align: center;
     font-family: Arial;
     font-size: 30px;
     line-height: 36px;
     font-weight: 400;
     color: #445161;
-    width: 100%;
-    display: block;
 }
 
 .container-buy {
@@ -346,19 +366,18 @@ padding:0;
 }
 
 .title-buy-item {
+    display: block;
+    margin: 0 0 17px 0;
     font-family: Arial;
     font-size: 24px;
     line-height: 30px;
     font-weight: 400;
     color: #ffffff;
-    display: block;
     text-align: center;
-    display: block;
-    margin: 0 0 17px 0;
-    
 }
 
 .standart-price {
+    display: block;
     border: 1px solid #445162;
     box-sizing: border-box;
     width: 300px;
@@ -391,11 +410,11 @@ padding:0;
     width: 260px;
     margin: 20px 20px 20px 20px;
     padding: 14px 0 13px 0;
-    box-sizing: border-box;
-    border: 2px solid white;
     text-align: center;
     text-decoration: none;
+    border: 2px solid #ffffff;
     border-radius: 5px;
+    box-sizing: border-box;
     background-color: #ffffff;
     word-break: break-all;
     font-family: Arial;
@@ -407,7 +426,10 @@ padding:0;
 }
 
 .buy-button:hover{
+    
     border: 2px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 5px;
     background-color: #445162;
     color: #ffffff;
 }
@@ -415,6 +437,8 @@ padding:0;
 .buy-button:active{
     color: #445162;
     background-color: #708090;
+    border: 2px solid #708090;
+    box-sizing: border-box;
 }
 
 .main-footer {
@@ -514,8 +538,7 @@ textarea[placeholder] {
     display: block;
     width: 140px;
     min-height: 40px;
-    box-sizing: border-box;
-    border: 1px solid white;
+    border: 1px solid #ffffff;
     border-radius: 5px;
     background-color: #ffffff;
     word-break: break-all;
@@ -528,15 +551,17 @@ textarea[placeholder] {
 }
 
 .contacts-button:hover{
-    border: 2px solid #ffffff;
     background-color: #445162;
     color: #ffffff;
-    box-sizing: border-box;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    
 }
 
 .contacts-button:active{
     color: #445162;
     background-color: #708090;
+    border: none;
 }
 
 .social-net{
